@@ -1,0 +1,173 @@
+---
+// import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
+// import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero4.astro';
+// import Testimonials from '~/components/widgets/Testimonials.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Services',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Lab Members"
+    title="Students"
+    subtitle="We love plants 🌲. Horticulture is cool 🌷. We protect our Earth 🌍."
+    image={{
+      src: '~/assets/images/students/HeroImage.jpg',
+      alt: 'Students Hero',
+    }}
+  />
+
+  <!-- Content Widget Tina  **************** -->
+
+  <Content
+    isReversed
+    isAfterContent
+    items={[
+      {
+        title: 'About Me',
+        description:
+          'Hi, everyone, my name is Tina. My hobbies are reading novels, listening to music, and watching movies. In my leisure time, I like to go to museums and do sports, such as playing volleyball and jogging. Welcome more people to join us.',
+        icon: 'tabler:wand',
+      },
+      {
+        title: 'Research',
+        description:
+          'I’m working on the plant growth-promoting bacteria (PGPB) in the soil to interact with crops, to know the relationship between PGPB and crops, and hope crops can increase biomass, decrease water usage, and gain benefit tolerant from adverse environmental conditions.',
+        icon: 'tabler:settings',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/students/TinaPhoto.webp',
+      alt: 'Tina Photo',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Tina</h3>
+      Master degree student
+    </Fragment>
+  </Content>
+
+
+
+  <!-- Content Widget Kaleb  **************** -->
+
+  <Content
+    items={[
+      {
+        title: 'About Me',
+        description:
+          'Hi, my name is Kaleb. I am a passinoate horticulturist and gardener. My Hobbies include doing sports, learning music and dance, and of course to plant alot of plants (一植入魂).',
+        icon: 'tabler:wand',
+      },
+      {
+        title: 'Research',
+        description:
+          'I seek nature as the source of my inspiration for my studies. My research goal is the integaration of nature into our horticultural system. Currently studing blueberries, beneficial bacteria, and mycorhizal fungi.',
+        icon: 'tabler:settings',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/students/KalebPhoto.jpg',
+      alt: 'Kaleb Photo',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Kaleb</h3>
+      Master degree student
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+
+  <!-- Content Widget Jim  **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'About Me',
+        description:
+          'Hello! This is Jim. I like music, not only like to play some musical instruments in my free time but also like to enjoy the relaxing music moment with a cup of coffee or tea.',
+        icon: 'tabler:wand',
+      },
+      {
+        title: 'Research',
+        description:
+          'My research aims to integrate the crop model and protected horticulture-related technologies to construct an automatic cultivation system with high resource use efficiency. This includes some critical fields, for instance, plant physiology, computer programming, the Internet of Things, etc. The ultimate goal of the research is to achieve a more sustainable agriculture practice and make some effort to the protection of our environment.',
+        icon: 'tabler:settings',
+      },
+      {
+        title: 'Website',
+        description:
+          'https://blog.ntuhort.com/',
+        icon: 'tabler:settings',
+      },
+      {
+        title: 'Goal',
+        description:
+          'Help the people in the world by agriculture.',
+        icon: 'tabler:settings',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/students/AfeiPhoto.webp',
+      alt: 'Jim Photo',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Jim</h3>
+      Master degree student
+    </Fragment>
+  </Content>
+
+
+  <!-- Content Widget Henry  **************** -->
+
+  <Content
+    items={[
+      {
+        title: 'About Me',
+        description:
+          'Hey! I am Henry. I like playing sports and music in my spare time. Being a graduate student, I can barely have time to listen to music and watch movies or drama on Netflix.',
+        icon: 'tabler:wand',
+      },
+      {
+        title: 'Research',
+        description:
+          'My research aims to apply plant growth-promoting bacteria (PGPB) to horticultural crops to see whether the crops can grow better no matter in stress or non-stress condition. The topics may need some fundamental background of knowledge, for instance, plant physiology, plant microbiology, plant pathology, etc. The study is hoped to provide an alternative way to improve horticultural production instead of only using chemical fertilizer.',
+        icon: 'tabler:settings',
+      },
+      {
+        title: 'Goal',
+        description:
+          'Improvement of horticultural production.',
+        icon: 'tabler:settings',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/students/HenryPhoto.webp',
+      alt: 'Henry Photo',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Henry</h3>
+      Master degree student
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+
+</Layout>

@@ -1,0 +1,72 @@
+---
+title: 'Research'
+layout: '~/layouts/MarkdownLayout.astro'
+---
+
+_Last updated_: June 30, 2024
+
+![Research Programs](~/assets/images/research/RschProg-Rho.svg)
+
+## Publications
+
+### Published in peer-reviewed journals
+
+<ol reversed>
+
+<li> Ou JC, Lin YH, Rho H. 2024. The effects of plant growth-promoting bacteria on the seed germination and
+seedling growth in <i>Crassocephalum rubens</i>. Botany. https://doi.org/10.1139/cjb-2024-0005 (IF*: 1.1, Plant Sci., 182/238=76.5%)**. </li>
+
+<li> Fransgo K, Lin LC, Rho H. 2024. Distinct interactions of ericoid mycorrhizae and plant growth-promoting bacteria: impacts on blueberry growth and heat resilience. Plant Signaling, and Behavior 19(1):e2329842. https://doi.org/10.1080/15592324.2024.2329842 (IF: 2.9, Plant Sci., 84/238=35.3%). </li>
+
+<li> Rho H, Sim HS, Moon YH, Woo UJ, Kim SK. 2023. Development of a cucumber transpiration model based on a simplified Penman-Monteith model in a venlo-type greenhouse. HortScience 58(10):1208-1216 https://doi.org/10.21273/HORTSCI17218-23 (IF: 1.9, Hort., 13/36=36.1%). </li>
+
+<li> Rho H, Gray J, Paetzold L, Xue Q, Rush CM. 2023. Evaluation of surface drip irrigation systems focusing on water-use efficiency in high-value vegetable production in the semi-arid, windy region of the Texas High Plains. Horticultural Science and Technology 41(2):125-143 https://doi.org/10.7235/HORT.20230013 (IF: 1.0, Hort., 26/36=72.2%). </li>
+
+<li> Chung SW‡, Rho H‡, Lim CK, Jeon MK, Kim SA, Jang YJ, An HJ. 2022. Photosynthetic response and antioxidative activity of ‘Hass’ avocado cultivar treated with short-term low temperature. Scientific Reports 12(1):11593 https://doi.org/10.1038/s41598-022-15821-3 (IF: 4.6, Mult., 22/73=30.1%). </li>
+
+<li> Rho H, O’Shaughnessy SA, Colaizzi PD, Workneh F, Paetzold L, Rush CM. 2022. Impacts of zebra chip disease and irrigation on leaf physiological traits in potato. Agricultural Water Management 269:107705 https://doi.org/10.1016/j.agwat.2022.107705 (IF: 6.7, Agron., 3/88=3.4%). </li>
+
+<li> O’Shaughnessy SA, Rho H, Colaizzi PD, Workneh F, Rush CM. 2022. Impact of zebra chip disease and irrigation levels on potato production. Agricultural Water Management 269:107647 https://doi.org/10.1016/j.agwat.2022.107647 (IF: 6.7, Agron., 3/88=3.4%). </li>
+
+<li> Rho H, Colaizzi PD, Gray J, Paetzold L, Xue Q, Patil BS, Rush CM. 2020. Yields, fruit quality, and water use in a Jalapeno pepper and tomatoes under open field and high tunnel production systems in the Texas High Plains. HortScience. 55(10):1632–1641 https://doi.org/10.21273/HORTSCI15143-20 (IF: 1.9, Hort., 13/36=36.1%). </li>
+
+<li> Rho H‡, Van Epps V‡, Kim SH, Doty SL. 2020. Endophytes increased fruit quality with higher soluble sugar production in Honeycrisp apple (<i>Malus pumila</i>). Microorganisms 8(5): 699. https://doi.org/10.3390/microorganisms8050699 (IF: 4.5, Microbiol., 47/135=34.1%). </li>
+
+<li> Rho H, Doty SL, Kim SH. 2020. Endophytes alleviate the elevated CO2-dependent decrease in photosynthesis in rice, particularly under nitrogen limitation. Journal of Experimental Botany 71(2):707-718. https://doi.org/10.1093/jxb/erz440 (IF: 6.9, Plant Sci., 18/238=7.6%). </li>
+
+<li> Adamipour N, Khosh-Khui M, Salehi H, Rho H. 2019. Effect of vermicompost on morphological and physiological performances of pot marigold (<i>Calendula officinalis</i> L.) under salinity conditions. Advances in Horticultural Science 33(3):345-358. https://doi.org/10.13128/AHS-23714 (IF: not available). </li>
+
+<li> Rho H, Doty SL, Kim SH. 2018. Estimating microbial respiratory CO2 from endophytic bacteria in rice. Plant Signaling, & Behavior 13(8):e1500067. https://doi.org/10.1080/15592324.2018.1500067 (IF: 2.9, Plant Sci., 84/238=35.3%). </li>
+
+<li> Rho H, Van Epps V, Wegley N, Doty SL, Kim SH. 2018. Salicaceae endophytes modulate stomatal behavior and increase water use efficiency in rice. Frontiers in Plant Science 9:188. https://doi.org/10.3389/fpls.2018.00188 (IF: 5.6, Plant Sci., 27/238=11.3%). </li>
+
+<li> Rho H, Hsieh M, Kandel SL, Cantillo J, Doty SL, Kim SH. 2018. Do endophytes promote growth of host plants under stress? A meta-analysis on plant stress mitigation by endophytes. Microbial Ecology 75(2):407-418. https://doi.org/10.1007/s00248-017-1054-3 (IF: 3.6, Ecol., 75/169=30.8%). </li>
+
+<li> Khan Z, Rho H, Firrincieli A, Hung SH, Luna V, Masciarelli O, Kim SH, Doty SL. 2016. Growth enhancement and drought tolerance of hybrid poplar upon inoculation with endophyte consortia. Current Plant Biology 6:38-47. https://doi.org/10.1016/j.cpb.2016.08.001 (IF: 5.4, Plant Sci., not available). </li>
+
+<li> Yu DJ, Rho H, Kim SJ, Lee HJ. 2015. Photosynthetic characteristics of highbush blueberry (<i>Vaccinium corymbosum</i> cv. Bluecrop) leaves in response to water stress and subsequent re-irrigation. Journal of Horticultural Science and Biotechnology 90(5):550-556. https://doi.org/10.1080/14620316.2015.11668713 (IF: 1.9, Hort., 13/36=36.1%). </li>
+
+<li> Kim YJ, Yu DJ, Rho H, Runkle ES, Lee HJ, Kim KS. 2015. Photosynthetic changes in Cymbidium orchids grown under different intensities of night interruption lighting. Scientia Horticulturae 186:124-128. https://doi.org/10.1016/j.scienta.2015.01.036 (IF: 4.3, Hort., 5/36=13.9%). </li>
+
+<li> Kim YJ, Park CJ, Rho H, Kim KS. 2012. Night interruption and night temperature regulate flower characteristics in Cymbidium. Korean Journal of Horticultural Science and Technology 30(3):236-242. https://dx.doi.org/10.7235/hort.2012.12019 (IF: 1.0, Hort., 26/36=72.2%). </li>
+
+<li> Rho H, Yu DJ, Kim SJ, Lee HJ. 2012. Limitation factors for photosynthesis in ‘Bluecrop’ highbush blueberry (<i>Vaccinium corymbosum</i>) leaves in response to moderate water stress. Journal of Plant Biology 55:450-457 https://doi.org/10.1007/s12374-012-0261-1 (IF: 2.9, Plant Sci., 84/238=35.3%). </li>
+
+<li> Rho H, Yu DJ, Kim SJ, Chun C, Lee HJ. 2011. Estimation of carboxylation efficiency from net CO2 assimilation rate as a function of chloroplastic CO2 concentration in strawberry (<i>Fragaria</i> × <i>ananassa</i> cv. Maehyang) leaves. Horticulture, Environment, and Biotechnology 52(6):547-552. https://doi.org/10.1007/s13580-011-0035-6 (IF: 2.4, Hort., 9/36=25.0%). </li>
+
+</ol>
+
+
+### Published in book chapters
+
+1. Rho H, Kim SH. 2017. Endophyte effects on photosynthesis and water use of plant hosts: A meta-analysis. In Functional Importance of the Plant Microbiome (ed Doty SL), pp. 43–69. Springer International Publishing, Cham, Switzerland. https://doi.org/10.1007/978-3-310-65897-1_4
+
+---
+
+\* Journal Citation Report 2022 Impact Factor
+
+** IF, category, rank=percentile statistics of the article in parentheses
+
+‡ Equally contributed as co-first authors
+
+**Google Scholar Profile:** [scholar.google.com/citations?user=m30TiTsAAAAJ&hl=en](https://scholar.google.com/citations?user=m30TiTsAAAAJ&hl=en)

@@ -1,0 +1,123 @@
+---
+import Image from '~/components/common/Image.astro';
+import Headline from '~/components/ui/Headline.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+
+
+import type { Carousel as Props } from '~/types';
+
+const {
+  title = '',
+  subtitle = '',
+  tagline = '',
+  carousel = [],
+  isAfterContent = false,
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${isAfterContent ? 'pt-0 md:pt-0 lg:pt-0' : ''} ${classes?.container ?? ''}`} bg={bg}>
+    <Headline title={title} subtitle={subtitle} tagline={tagline} />
+    <div class="flex flex-wrap justify-center -m-4 text-center">
+        <div class="swiper rounded-md p-4 md:w-1/4 sm:w-1/2 w-full min-w-[80%]">
+        
+            <div class="swiper-wrapper">
+                {carousel &&
+                    carousel.map(({src, alt}) => (
+                        <div class="swiper-slide swiper-autoplay">
+                            {(src) && (
+                                <Image src= { src } alt ={alt}/>
+                            )}
+                        
+                        </div>
+                ))}
+            </div>
+                
+            <div class="swiper-pagination"></div>
+
+
+            <div class="swiper-button swiper-button-prev"></div>
+            <div class="swiper-button swiper-button-next"></div>
+
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+</WidgetWrapper>
+
+
+
+<style>
+    .swiper-wrapper {
+      max-width: 800px;
+      max-height: 500px;
+    }
+  
+    .swiper-slide img {
+      /* height: auto; */
+      /* max-width: 100%; */
+      object-fit: contain;
+      height: 100%;
+      width: 100%;
+    }
+  
+    .swiper-button-prev {
+        background-repeat: no-repeat;
+        &:after {
+            content:'';
+        }
+      background-image: url("~/assets/swiper/swiper-left.svg") !important;
+    }
+
+    .swiper-button-next {
+        background-repeat: no-repeat;
+        &:after {
+            content:'';
+        }
+      background-image: url("~/assets/swiper/swiper-right.svg") !important;
+    }
+
+    .swiper-button::after {
+      /* font-size: 32px; */
+      /* background-color: white; */
+      /* color: var(--aw-color-primary); */
+    }
+  </style>
+  
+  <script>
+    import Swiper from 'swiper'
+    import { Navigation, Pagination, Autoplay} from 'swiper/modules'
+    import 'swiper/css/bundle'
+  
+    export const swiperConfig = {
+      modules: [Navigation, Pagination, Autoplay],
+      // Optional parameters
+      loop: true,
+      autoplay: {
+        delay: 5000,
+      },
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+  
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+  
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    }
+  
+    const swiper = new Swiper('.swiper', swiperConfig)
+  </script>
+

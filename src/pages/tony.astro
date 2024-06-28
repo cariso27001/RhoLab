@@ -1,0 +1,95 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero3.astro';
+// import Note from '~/components/widgets/Note.astro';
+// import Features from '~/components/widgets/Features.astro';
+// import Features2 from '~/components/widgets/Features2.astro';
+// import Features4 from '~/components/widgets/Features4.astro';
+// import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content2.astro';
+// import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+// import FAQs from '~/components/widgets/FAQs.astro';
+// import Stats from '~/components/widgets/Stats.astro';
+// import CallToAction from '~/components/widgets/CallToAction.astro';
+// import Carousel from '~/components/widgets/Carousel.astro';
+
+
+
+const metadata = {
+  title: 'RhoLab — A crop physiology lab at NTU',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Profile',
+        href: 'http://www.hort.ntu.edu.tw/web/team/team_in.jsp?mp_no=MP1612404684460',
+        // target: '_blank',
+        icon: 'tabler:user-circle',
+      },
+      {
+        variant: 'primary',
+        text: 'Google Scholar',
+        href: 'https://scholar.google.com/citations?user=m30TiTsAAAAJ&hl=en',
+        // target: '_blank',
+        icon: 'tabler:brand-google-filled',
+      },
+      {
+        variant: 'primary',
+        text: 'Curriculum Vitae',
+        href: 'https://drive.google.com/file/d/1aO8Swe2TX3hsUOg1s26VtMKh0npkEaxS/view?pli=1',
+        // target: '_blank',
+        icon: 'tabler:file-like',
+      },    
+    ]}
+    image={{
+      src: '~/assets/images/tony/HeroBG.jpg',
+      alt: 'Tony Hero',
+    }}
+  >
+    <Fragment slot="title">
+      <span class="text-accent text-gray-100 dark:text-gray-100 highlight"> Hyungmin “Tony” Rho </span>
+      
+    </Fragment>
+    <Fragment slot="subtitle">
+      <span class="text-accent text-gray-100 dark:text-gray-100 highlight">
+        Assistant Professor
+      </span>
+    </Fragment>
+
+</Hero>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+    ]}
+    image={{
+      src: '~/assets/images/tony/Tony-Profile.webp',
+      alt: 'Tony Profile',
+    }}
+  >
+    <Fragment slot="content">
+      <div class="text text-justify text-base text-gray-600 tracking-wide dark:text-white mb-2" style="line-height: 2.0em">
+        Mandarin name：盧炯敏 <br>
+        Email：VeggieRho@ntu.edu.tw <br>
+        Phone：(02)33664871 <br>
+        Qualification：Doctoral degree at University of Washington <br>
+        Specialty：Horticultural crop physiolog <br><br></div>
+      <hr>
+      <div class="text text-justify text-base text-gray-600 tracking-wide dark:text-white mb-2" style="line-height: 1.8em"><br>&emsp;&emsp;In the realm of agriculture facing the challenges posed by climate change, the pursuit of sustainability has emerged as a paramount goal within research. Addressing the impacts of climate change on crop production demands a dual focus on environmental preservation and economic viability. Central to this endeavor is the fortification of crop resilience and the optimization of resources employed in cultivation. Within this landscape, Rho has been instrumental in pioneering pathways to bolster resource-use efficiency across diverse crop production systems. This involves a nuanced comprehension of the interplay between environmental variables and plant physiological responses – a foundational step in evaluating crop resource utilization, encompassing water, nutrients, light, and carbon dioxide. Over the past five years, Rho’s research has been primarily centered on the physiological assessment of crops thriving in protective environment production systems (e.g., high-tunnels or low-tunnels) and those benefiting from plant growth-promoting bacteria (PGPB) amid changing climatic conditions. Notably, significant contributions have expanded our insights into the role of PGPB in modulating the physiological functions of host plants. Additionally, recent endeavors encompass the nascent development of process-based crop models (PBCM), geared towards facilitating informed and resource-efficient management decisions. While these models are in their preliminary stages, they signify an innovative stride towards sustainable agricultural practices in the face of climate change.</div>
+    </Fragment>
+
+
+  </Content>
+
+
+</Layout>

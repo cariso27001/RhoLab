@@ -1,0 +1,94 @@
+---
+// import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
+// import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero4.astro';
+// import Testimonials from '~/components/widgets/Testimonials.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Services',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Lab Members"
+    title="Graduated Students"
+    subtitle="We love plants 🌲. Horticulture is cool 🌷. We protect our Earth 🌍."
+    image={{
+      src: '~/assets/images/graduated/HeroBG.jpg',
+      alt: 'Graduated Hero',
+    }}
+  />
+
+
+  <!-- Content Widget Moira  **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'About Me',
+        description:
+          'Hello! This is Moira. My personal interest is drawing, DIY, cooking & baking.',
+        icon: 'tabler:wand',
+      },
+      {
+        title: 'Research',
+        description:
+          'My research aims to improve Crassocephalum rubens germination rate and seedling survival rate. At the same time, I hope to set up some basic knowledge of Crassocephalum rubens.',
+        icon: 'tabler:settings',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/graduated/MoiraPhoto.png',
+      alt: 'Moira Photo',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Moira</h3>
+      2023 Graduated Master Degree
+    </Fragment>
+
+  </Content>
+
+
+  <!-- Content Widget Joy  **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'About Me',
+        description:
+          'Hi, I’m Joy. My hobbies are playing badminton, reading novels, listening to music, traveling. My interests are quite board and like to learn different things, like to challenge myself. We have a really active and mutual aid group, welcome to contact us!',
+        icon: 'tabler:wand',
+      },
+      {
+        title: 'Research',
+        description:
+          'I’m now working on understanding the effects of root temperature change on lettuce, which will further affect in research of applying PGPB into hydroponic system.',
+        icon: 'tabler:settings',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/graduated/JoyPhoto.jpg',
+      alt: 'Joy Photo',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Joy</h3>
+      2024 Graduated Master Degree
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+
+
+</Layout>

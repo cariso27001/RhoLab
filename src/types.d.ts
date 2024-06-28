@@ -284,3 +284,15 @@ export interface Content extends Omit<Headline, 'classes'>, Widget {
 }
 
 export interface Contact extends Omit<Headline, 'classes'>, Form, Widget {}
+
+export interface Carousel extends Omit<Headline, 'classes'>, Widget {
+  carousel: Array<{
+    src: string;
+    alt: string;
+  }>;
+  items?: Array<Item>;
+  columns?: number;
+  isAfterContent?: boolean;
+  callToAction?: CallToAction;
+  
+}
