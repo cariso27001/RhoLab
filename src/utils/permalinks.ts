@@ -135,14 +135,16 @@ const definitivePermalink = (permalink: string): string => createPath(BASE_PATHN
 //   return menu;
 // };
 type MenuItem = {
-  [key: string]: unknown; // Allow dynamic properties
+  [key: string]: any;
 };
 
-export const applyGetPermalinks = (menu: object = {}): unknown => {
+type Menu = MenuItem | MenuItem[];
+
+export const applyGetPermalinks = (menu: Menu = {}): Menu => {
   if (Array.isArray(menu)) {
     return menu.map((item) => applyGetPermalinks(item));
   } else if (typeof menu === 'object' && menu !== null) {
-    const obj: MenuItem = {}; // Use the MenuItem type with an index signature
+    const obj: MenuItem = {};
     for (const key in menu) {
       if (key === 'href') {
         if (typeof menu[key] === 'string') {
