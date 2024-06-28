@@ -194,18 +194,52 @@ export const getStaticPathsBlogPost = async () => {
 };
 
 /** */
+// export const getStaticPathsBlogCategory = async ({ paginate }: { paginate: PaginateFunction }) => {
+//   if (!isBlogEnabled || !isBlogCategoryRouteEnabled) return [];
+
+//   const posts = await fetchPosts();
+//   const categories = {};
+//   posts.map((post) => {
+//     post.category?.slug && (categories[post.category?.slug] = post.category);
+//   });
+
+//   return Array.from(Object.keys(categories)).flatMap((categorySlug) =>
+//     paginate(
+//       posts.filter((post) => post.category?.slug && categorySlug === post.category?.slug),
+//       {
+//         params: { category: categorySlug, blog: CATEGORY_BASE || undefined },
+//         pageSize: blogPostsPerPage,
+//         props: { category: categories[categorySlug] },
+//       }
+//     )
+//   );
+// };
+
+type Category = {
+  slug: string;
+  [key: string]: any;
+};
+
+type PostWithCategory = {
+  category?: Category;
+  [key: string]: any;
+};
+
 export const getStaticPathsBlogCategory = async ({ paginate }: { paginate: PaginateFunction }) => {
   if (!isBlogEnabled || !isBlogCategoryRouteEnabled) return [];
 
-  const posts = await fetchPosts();
-  const categories = {};
-  posts.map((post) => {
-    post.category?.slug && (categories[post.category?.slug] = post.category);
+  const posts: PostWithCategory[] = await fetchPosts();
+  const categories: { [key: string]: Category } = {};
+
+  posts.forEach((post) => {
+    if (post.category?.slug) {
+      categories[post.category.slug] = post.category;
+    }
   });
 
   return Array.from(Object.keys(categories)).flatMap((categorySlug) =>
     paginate(
-      posts.filter((post) => post.category?.slug && categorySlug === post.category?.slug),
+      posts.filter((post) => post.category?.slug && categorySlug === post.category.slug),
       {
         params: { category: categorySlug, blog: CATEGORY_BASE || undefined },
         pageSize: blogPostsPerPage,
@@ -215,17 +249,56 @@ export const getStaticPathsBlogCategory = async ({ paginate }: { paginate: Pagin
   );
 };
 
+
 /** */
+// export const getStaticPathsBlogTag = async ({ paginate }: { paginate: PaginateFunction }) => {
+//   if (!isBlogEnabled || !isBlogTagRouteEnabled) return [];
+
+//   const posts = await fetchPosts();
+//   const tags = {};
+//   posts.map((post) => {
+//     Array.isArray(post.tags) &&
+//       post.tags.map((tag) => {
+//         tags[tag?.slug] = tag;
+//       });
+//   });
+
+//   return Array.from(Object.keys(tags)).flatMap((tagSlug) =>
+//     paginate(
+//       posts.filter((post) => Array.isArray(post.tags) && post.tags.find((elem) => elem.slug === tagSlug)),
+//       {
+//         params: { tag: tagSlug, blog: TAG_BASE || undefined },
+//         pageSize: blogPostsPerPage,
+//         props: { tag: tags[tagSlug] },
+//       }
+//     )
+//   );
+// };
+
+type Tag = {
+  slug: string;
+  [key: string]: any;
+};
+
+type Post = {
+  tags: Tag[];
+  [key: string]: any;
+};
+
 export const getStaticPathsBlogTag = async ({ paginate }: { paginate: PaginateFunction }) => {
   if (!isBlogEnabled || !isBlogTagRouteEnabled) return [];
 
-  const posts = await fetchPosts();
-  const tags = {};
-  posts.map((post) => {
-    Array.isArray(post.tags) &&
-      post.tags.map((tag) => {
-        tags[tag?.slug] = tag;
+  const posts: Post[] = await fetchPosts();
+  const tags: { [key: string]: Tag } = {};
+  
+  posts.forEach((post) => {
+    if (Array.isArray(post.tags)) {
+      post.tags.forEach((tag) => {
+        if (tag?.slug) {
+          tags[tag.slug] = tag;
+        }
       });
+    }
   });
 
   return Array.from(Object.keys(tags)).flatMap((tagSlug) =>
@@ -239,6 +312,7 @@ export const getStaticPathsBlogTag = async ({ paginate }: { paginate: PaginateFu
     )
   );
 };
+
 
 /** */
 export async function getRelatedPosts(originalPost: Post, maxResults: number = 4): Promise<Post[]> {
