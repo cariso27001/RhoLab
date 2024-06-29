@@ -33,19 +33,19 @@ export const headerData = {
         },
         {
           text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
+          href: getPermalink('present-work-ahc-2023', 'post'),
         },
         {
           text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
+          href: getPermalink('remote-greenhouse-irrigation', 'post'),
         },
         {
           text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
+          href: getPermalink('pgpb', 'category'),
         },
         {
           text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
+          href: getPermalink('research', 'tag'),
         },
       ],
     },
@@ -223,15 +223,15 @@ export const footerData = {
         },
         {
           text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
+          href: getPermalink('present-work-ahc-2023', 'post'),
         },
         {
           text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
+          href: getPermalink('pgpb', 'category'),
         },
         {
           text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
+          href: getPermalink('research', 'tag'),
         },
       ],
     },
