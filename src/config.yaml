@@ -1,6 +1,6 @@
 site:
   name: RhoLab
-  site: 'https://astrowind.vercel.app'
+  site: 'https://rholab.netlify.app'
   base: '/'
   trailingSlash: false
   logo: '~/assets/images/RhoLabIcon.svg'
