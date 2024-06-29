@@ -198,7 +198,10 @@ export const getStaticPathsBlogCategory = async ({ paginate }: { paginate: Pagin
   if (!isBlogEnabled || !isBlogCategoryRouteEnabled) return [];
 
   const posts = await fetchPosts();
-  const categories = {};
+  // const categories = {};
+  const categories: {[key: string]: any} = {}
+  const prop = 'propname'
+  categories[prop] = 'string'
   posts.map((post) => {
     post.category?.slug && (categories[post.category?.slug] = post.category);
   });
