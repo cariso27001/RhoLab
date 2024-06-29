@@ -21,36 +21,6 @@ const {
 
 ---
 
-<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${isAfterContent ? 'pt-0 md:pt-0 lg:pt-0' : ''} ${classes?.container ?? ''}`} bg={bg}>
-    <Headline title={title} subtitle={subtitle} tagline={tagline} />
-    <div class="flex flex-wrap justify-center -m-4 text-center">
-        <div class="swiper rounded-md p-4 md:w-1/4 sm:w-1/2 w-full min-w-[80%]">
-        
-            <div class="swiper-wrapper">
-                {carousel &&
-                    carousel.map(({src, alt}) => (
-                        <div class="swiper-slide swiper-autoplay">
-                            {(src) && (
-                                <Image src= { src } alt ={alt}/>
-                            )}
-                        
-                        </div>
-                ))}
-            </div>
-                
-            <div class="swiper-pagination"></div>
-
-
-            <div class="swiper-button swiper-button-prev"></div>
-            <div class="swiper-button swiper-button-next"></div>
-
-            <div class="swiper-scrollbar"></div>
-        </div>
-    </div>
-</WidgetWrapper>
-
-
-
 <style>
     .swiper-wrapper {
       max-width: 800px;
@@ -121,3 +91,30 @@ const {
     const swiper = new Swiper('.swiper', swiperConfig)
   </script>
 
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${isAfterContent ? 'pt-0 md:pt-0 lg:pt-0' : ''} ${classes?.container ?? ''}`} bg={bg}>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} />
+  <div class="flex flex-wrap justify-center -m-4 text-center">
+      <div class="swiper rounded-md p-4 md:w-1/4 sm:w-1/2 w-full min-w-[80%]">
+      
+          <div class="swiper-wrapper">
+              {carousel &&
+                  carousel.map(({src, alt}) => (
+                      <div class="swiper-slide swiper-autoplay">
+                          {(src) && (
+                              <Image src= { src } alt ={alt}/>
+                          )}
+                      
+                      </div>
+              ))}
+          </div>
+              
+          <div class="swiper-pagination"></div>
+
+
+          <div class="swiper-button swiper-button-prev"></div>
+          <div class="swiper-button swiper-button-next"></div>
+
+          <div class="swiper-scrollbar"></div>
+      </div>
+  </div>
+</WidgetWrapper>
