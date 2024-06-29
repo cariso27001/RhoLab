@@ -263,6 +263,6 @@ export const footerData = {
   ],
   footNote: `
     
-    Copyright © 2024 <a class="text-blue-600 underline dark:text-muted" href="https://onwidget.com/"> RhoLab</a> | Theme by <a class="text-blue-600 underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
+    Copyright © 2024 <a class="text-blue-600 underline dark:text-muted" href="https://rholab.ddns.net/"> RhoLab</a> | Theme by <a class="text-blue-600 underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
   `,
 };
