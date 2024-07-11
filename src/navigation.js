@@ -246,7 +246,10 @@ export const footerData = {
           text: 'Courses',
           href: getPermalink('/teaching'),
         },
-
+        {
+          text: 'JupyterHub',
+          href: 'https://rholab.ddns.net/jupyter/',
+        },
       ],
     },  
     {
